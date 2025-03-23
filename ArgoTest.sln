@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices2", "Microserv
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C9E5420F-1DE0-4ACE-BC44-143EB7F964C2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{082118BD-0970-414B-BEF1-E48C8012DCA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE366ED1-A0A4-4851-B3E6-DA02013A489F} = {082118BD-0970-414B-BEF1-E48C8012DCA3}
+		{43E8D805-4301-406A-947E-4C5C3E626157} = {082118BD-0970-414B-BEF1-E48C8012DCA3}
 	EndGlobalSection
 EndGlobal
