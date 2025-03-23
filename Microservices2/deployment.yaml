@@ -17,5 +17,5 @@ spec:
           image: elalejmartin/microservices2:dev
           imagePullPolicy: Always
           ports:
-            - containerPort: 81
+            - containerPort: 82
 
