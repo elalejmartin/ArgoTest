@@ -35,7 +35,7 @@ namespace Microservices1.Controllers
 
             }
 
-            return null;
+            return NoContent();
         }
     }
 }
