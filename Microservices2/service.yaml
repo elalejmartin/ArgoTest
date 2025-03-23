@@ -6,5 +6,7 @@ spec:
   selector:
     app: microservice-2
   ports:
-    - port: 82
+    - protocol: TCP
+      port: 82
       targetPort: 82
+  type: ClusterIP
