@@ -1,0 +1,27 @@
+services:
+  microservices1:
+    image: ${DOCKER_REGISTRY-}microservices1
+    container_name: microservices-1
+    hostname: microservices-1
+    ports:
+      - "8001:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    build:
+      context: .
+      dockerfile: Microservices1/Dockerfile
+
+  microservices2:
+    image: ${DOCKER_REGISTRY-}microservices2
+    container_name: microservices-2
+    hostname: microservices-2
+    ports:
+      - "8002:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    build:
+      context: .
+      dockerfile: Microservices2/Dockerfile
+
