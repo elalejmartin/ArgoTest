@@ -9,6 +9,7 @@ spec:
     repoURL: 'https://github.com/elalejmartin/ArgoTest.git'
     targetRevision: master
     path: Microservices2
+    kustomize: {}
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
