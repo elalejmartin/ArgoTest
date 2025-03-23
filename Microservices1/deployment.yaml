@@ -15,5 +15,6 @@ spec:
       containers:
         - name: microservice-1
           image: elalejmartin/microservices1:dev
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
