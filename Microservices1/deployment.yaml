@@ -17,5 +17,3 @@ spec:
           image: elalejmartin/microservices1:dev
           ports:
             - containerPort: 80
-      imagePullSecrets:
-        - name: regcred  # << nombre del secret creado con kubectl
