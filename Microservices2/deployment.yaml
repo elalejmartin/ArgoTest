@@ -1,0 +1,21 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microservice-2
+  template:
+    metadata:
+      labels:
+        app: microservice-2
+    spec:
+      containers:
+        - name: microservice-2
+          image: elalejmartin/microservices2:dev
+          ports:
+            - containerPort: 80
+        imagePullSecrets:
+        - name: regcred  # << nombre del secret creado con kubectl

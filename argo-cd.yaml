@@ -1,0 +1,21 @@
+# argo-app.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-test
+  namespace: default
+spec:
+  project: argo-test
+  source:
+    repoURL: 'https://github.com/elalejmartin/ArgoTest.git'
+    targetRevision: master
+    path: manifests # <- carpeta donde están los k8s YAMLs
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
