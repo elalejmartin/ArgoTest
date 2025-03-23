@@ -25,6 +25,6 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        file: ./Dockerfile
+        file: ./Microservices1/Dockerfile
         push: true
         tags: elalejmartin/microservices1:dev
