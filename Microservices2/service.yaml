@@ -6,5 +6,5 @@ spec:
   selector:
     app: microservice-2
   ports:
-    - port: 81
-      targetPort: 81
+    - port: 82
+      targetPort: 82
