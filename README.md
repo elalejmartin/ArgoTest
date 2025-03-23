@@ -5,7 +5,8 @@
    ```bash
    docker login
 
+   ```bash
 docker tag microservices1:dev elalejmartin/microservices1:dev
 
-
+   ```bash
 docker push elalejmartin/microservices1:dev
