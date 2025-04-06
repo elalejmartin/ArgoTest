@@ -17,4 +17,4 @@ spec:
               service:
                 name: microservice-1
                 port:
-                  number: 81
+                  number: 8080

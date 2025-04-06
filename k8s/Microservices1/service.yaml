@@ -7,6 +7,6 @@ spec:
     app: microservice-1
   ports:
     - protocol: TCP
-      port: 81
-      targetPort: 81
+      port: 8080
+      targetPort: 8080
   type: ClusterIP
