@@ -1,0 +1,19 @@
+﻿apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: microservice-1-ingress
+  namespace: argocd  # Cambia si tu servicio está en otro namespace
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: micro.local  # Cambia esto si tienes un dominio real
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: microservice-1
+                port:
+                  number: 81
