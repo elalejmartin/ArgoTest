@@ -2,3 +2,4 @@
   - deployment.yaml
   - service.yaml
   - ingress.yaml 
+  - metallb-config
