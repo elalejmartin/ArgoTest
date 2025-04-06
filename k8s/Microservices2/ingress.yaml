@@ -1,7 +1,7 @@
 ﻿apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: microservice-1-ingress
+  name: microservice-2-ingress
   namespace: argocd
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
@@ -11,10 +11,10 @@ spec:
     - host: micro.local
       http:
         paths:
-          - path: /service1
+          - path: /service2
             pathType: Prefix
             backend:
               service:
-                name: microservice-1
+                name: microservice-2
                 port:
                   number: 8080
