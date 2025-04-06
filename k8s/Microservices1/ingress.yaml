@@ -2,12 +2,13 @@
 kind: Ingress
 metadata:
   name: microservice-1-ingress
-  namespace: argocd  # Cambia si tu servicio está en otro namespace
+  namespace: argocd
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  ingressClassName: nginx  # 👈 Agrega esta línea
   rules:
-    - host: micro.local  # Cambia esto si tienes un dominio real
+    - host: micro.local
       http:
         paths:
           - path: /
